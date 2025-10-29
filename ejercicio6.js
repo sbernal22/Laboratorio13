@@ -1,2 +1,2 @@
-setNombres=new Set(["Diego", "Diego", "Jerald"])
+let setNombres=new Set(["Diego", "Diego", "Jerald"])
 console.log(setNombres);
