@@ -1,15 +1,14 @@
 function contarLetras(texto){
     texto=texto.toLowerCase();
-    let mapaLetras=new Map();
+    let objetoLetras={};
     for(let letra of texto){
-        if(mapaLetras.has(letra)){
-            let valor=mapaLetras.get(letra);
-            mapaLetras.set(letra, valor+1);
+        if(objetoLetras[letra]==undefined){
+            objetoLetras[letra]=1;
         }
         else{
-            mapaLetras.set(letra, 1);
+            objetoLetras[letra]++;
         }
     }
-    return mapaLetras;
+    return objetoLetras;
 }
 console.log(contarLetras("banana"));
